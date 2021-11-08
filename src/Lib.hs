@@ -1,6 +1,6 @@
 module Lib
-    ( someFunc
+    ( requestFromServer
     ) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+requestFromServer :: String -> IO ()
+requestFromServer query = putStrLn query
