@@ -12,7 +12,8 @@ defmodule AskIntern do
       :world
 
   """
-  def hello do
-    :world
+  def main(args) do
+    query = Enum.join(args, " ")
+    IO.puts query
   end
 end
